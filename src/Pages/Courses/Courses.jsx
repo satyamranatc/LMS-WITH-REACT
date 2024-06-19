@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Courses.css"
 
-import Card from "/Users/satyamrana/Documents/The Legends Of Code/LMS WITH REACT/src/Components/Card.jsx"
+import Card from "./Card"
 export default function Courses() {
 
   let CoursesData = [
