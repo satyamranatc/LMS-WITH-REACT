@@ -38,7 +38,7 @@ a{
 #MainNav ul li:hover
 {
     padding: 0.5rem 1rem;
-    background-color: teal;
+    background-color: rgb(255, 5, 68);
     color: white;
     border-radius: 30px;
 }
