@@ -10,7 +10,7 @@ const Card = ({ e }) => {
         <h2 className="card-title">{e.CourseTitle}</h2>
         <p className="card-description">{e.CourseDescription}</p>
         <div className="card-info">
-          <div className="card-price">Price: ₹{e.CoursePrice}</div>
+          <div className="card-price">Price: {e.CoursePrice}</div>
           <div className="card-duration">Duration: {e.CourseDuration}</div>
           <div className="card-language">Language: {e.CourseLanguage}</div>
         </div>
