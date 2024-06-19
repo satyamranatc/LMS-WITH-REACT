@@ -32,11 +32,12 @@ a{
     cursor: pointer;
     user-select: none;
     transition: 0.3s;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 }
 
 #MainNav ul li:hover
 {
+    padding: 0.5rem 1rem;
     background-color: teal;
     color: white;
     border-radius: 30px;
