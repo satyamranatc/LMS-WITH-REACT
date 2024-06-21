@@ -1,8 +1,13 @@
 import React from 'react'
 import "./Questions.css"
 import Practice from '../Practice'
-export default function Questions() {
+import { useNavigate } from 'react-router-dom';
 
+
+
+export default function Questions({setSelectedQuestion}) {
+
+    let Navigate = useNavigate();
 
   let AllQuestions = [
       {
@@ -127,6 +132,12 @@ export default function Questions() {
       }
   ];
   
+  function handleSolve(q)
+  {
+
+    setSelectedQuestion(q)
+    Navigate("/Editor")
+  }
 
   return (
     <div>
@@ -141,7 +152,7 @@ export default function Questions() {
                     <h4>{q.Level}</h4>
                     <h4>{q.Marks} Marks</h4>
                   </div>
-                  <button>Solve</button>
+                  <button onClick={()=>handleSolve(q)}>Solve</button>
                 </div>
               ))}
             </div>
